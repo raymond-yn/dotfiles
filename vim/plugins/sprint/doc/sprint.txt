@@ -1,0 +1,74 @@
+sprint.txt* Async file running
+===============================================================================
+#                                                                             #
+#                                Sprint                                       #
+#                                                                             #
+===============================================================================
+CONTENTS                                                      *sprint-contents*
+
+    1.  Contents.....................................|sprint-contents|
+    1.  Intro........................................|sprint-intro|
+    2.  Commands.....................................|sprint-functions|
+    2.1 Sprint.......................................|Sprint|
+    2.2 SprintStop...................................|SprintStop|
+    2.  Customization................................|sprint-customization|
+    3   Support Languages............................|sprint-langauges|
+
+===============================================================================
+INTRO                                                            *sprint-intro*
+
+Sprint adds a command to vim to allow for asynchronus running of your file, perfect for testing. On compiled formats sprint will compile to the default name or use the "sprintFile" name to create a file to run, so make sure no file with this name exists.
+
+===============================================================================
+COMMANDS                                                     *sprint-functions*
+
+Overview:~
+
+  |Sprint|....................Runs the current file
+  |SprintStop|................Stops current Async process
+
+
+-------------------------------------------------------------------------------
+  :Sprint                                                              *Sprint*
+  Compiles and runs the current file based on the default settings
+
+  :SprintStop                                                       *SprintStop*
+  Stops current sprint or async job
+
+
+===============================================================================
+CUSTOMIZATION                                             *sprint-customization*
+
+set g:SprintForceRun = 0
+Forces Sprint to only run if the previous job was completed 
+
+set g:SprintHidden = 1
+Sprint hidden means quickfix will not show while the program runs but it can
+be brought up by the copen command
+
+===============================================================================
+SUPPORTED LANGUAGES                                           *sprint-languages*
+
+Sprint currently supports
+
+ -C
+ -C++
+ -Python
+ -Php
+ -Javascript
+ -CoffeeScript(Currently removed due to bug)
+ -Java(Will compile and run the Main.java file)
+ -Haskell
+ -Rust
+ -Markdown
+  -README.md files will compile into github html
+  -Other files will compile into Latex
+
+If you want another language added just submit an issue or make a pull request.
+
+-------------------------------------------------------------------------------
+
+First public release: 2016/12/26
+
+===============================================================================
+vim:ft=help:et:ts=2:sw=2:sts=2:norl
