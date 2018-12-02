@@ -51,6 +51,7 @@ ALT + m : UltiSnipsListSnippets
 " use tab enter normal model,and user hjkl to move  
 :LeaderfTag = search ctag  
 :LeaderfLine = search word and varible  
+:Leaderf rg = use rg in vim
 :CtrlSF + word = search word in multi file    " default use ripgrep to search word. If you want enable it,you must install ripgrep.Otherwise, you need to comment the conf of rg  
 ```
 
