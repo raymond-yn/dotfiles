@@ -56,8 +56,6 @@ antigen apply
 #export PATH="$PATH:$HOME/.local/bin"
 
 
-# alias
-alias sss='sudo systemctl start sddm'
 
 
 # syntax color definition
