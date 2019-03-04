@@ -17,9 +17,9 @@ mkdir -p ~/.vim/files/undo
 mkdir -p ~/.vim/files/info
 ln -s xxxx/ray.vim ~/.vimrc
 ```
-if you want to use ctags and gtags, you need to uncomment the code about that after  compliing and installing that by yourself.   
-if you want to enable ycm or neocomplete,you need to uncomment that too,and you need complie ycm by yourself.  
-if you want to enable ale for python, you need pip install pylint and flake8 firstly.     
+If you want to use ctags and gtags, you need to uncomment the code about that after compliing and installing that by yourself.   
+By default dotfile use neocomplete, you need use vim with lua to make it work.If you want to enable ycm , after uncomment that part, you need to Run PluginInstall in vim commandline and complie ycm by youself.   
+If you want to enable ale for python, you need pip install pylint and flake8 firstly.     
 ### vim keymaps
 ```
 prefix :still ctrl+w  
