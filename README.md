@@ -10,7 +10,7 @@ This repo is a individual repo for quickly building code env.
 ```
 mkdir -p ~/.vim
 mkdir -p ~/.vim/colors
-cp dotfiles/colors/* ~/.vim/colors
+cp dotfiles/vim/colors/* ~/.vim/colors
 mkdir -p ~/.vim/files/backup
 mkdir -p ~/.vim/files/swap
 mkdir -p ~/.vim/files/undo
